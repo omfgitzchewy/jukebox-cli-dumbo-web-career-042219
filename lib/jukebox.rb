@@ -46,16 +46,16 @@ end
 
 def run(array)
   help
-  input = nil
-  while input != "exit"
+  command = nil
+  while command != "exit"
     puts "Please enter a command:"
     input = gets.chomp
     case
-    when input == "help"
+    when command == "help"
       help
-    when input == "list"
+    when command == "list"
       list(array)
-    when input == "play"
+    when command == "play"
       play(array)
     else
       puts "Invalid input, please try again"
