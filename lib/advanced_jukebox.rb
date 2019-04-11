@@ -41,7 +41,7 @@ def play(my_songs)
   input = gets.chomp
 
   if (my_songs.keys).include?(input)
-    system "xdg-open #{my_songs[input]}"
+    system "open #{my_songs[input]}"
   else
     puts "Invalid input, please try again"
   end
