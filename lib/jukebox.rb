@@ -29,11 +29,13 @@ def play(array)
   input = gets.chomp
   songs = {}
   array.each_with_index do |title, i|
-    songs[i + 1] = title 
+    songs[i + 1] = title
   end
-  if
-
+  if song[input]
+    puts "Playing " + song[input]
+  elsif array.include?(input)
+    puts "Playing " + input
   else
-    "Invalid input, please try again"
+    puts "Invalid input, please try again"
   end
 end
