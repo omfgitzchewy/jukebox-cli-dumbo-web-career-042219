@@ -57,7 +57,7 @@ def run(array)
       play(array)
     when command == "help"
       help
-    else
+    when
       puts "Invalid, try again"
     end
   end
