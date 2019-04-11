@@ -47,7 +47,7 @@ end
 def run(array)
   help
   command = nil
-  unless command != "exit"
+  until command != "exit"
     puts "Please enter command:"
     command = gets.chomp
     case
