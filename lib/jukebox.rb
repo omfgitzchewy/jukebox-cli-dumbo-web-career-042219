@@ -53,10 +53,9 @@ def run(array)
       list(array)
     elsif command == "play"
       play(array)
-    elsif command == "help"
+    else command == "help"
       help
-    else command == "exit"
-      exit_jukebox
     end
+    exit_jukebox
   end
 end
