@@ -44,7 +44,7 @@ def exit_jukebox
   puts "Goodbye"
 end
 
-def run(array)
+def run(songs)
   help
   command = nil
   while command != "exit"
@@ -52,9 +52,9 @@ def run(array)
     command = gets.chomp
     case
     when command == "list"
-      list(array)
+      list(songs)
     when command == "play"
-      play(array)
+      play(songs)
     when command == "help"
       help
     else
