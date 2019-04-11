@@ -17,3 +17,9 @@ def help
         - play : lets you choose a song to play
         - exit : exits this program"
 end
+
+def list(array)
+  arr.each_with_index do |element, i|
+    puts "#{i}. element"
+  end
+end
