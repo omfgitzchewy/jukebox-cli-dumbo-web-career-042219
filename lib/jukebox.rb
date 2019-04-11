@@ -45,8 +45,9 @@ def exit_jukebox
 end
 
 def run(array)
+  help
   command = nil
-  until command == "exit"
+  until command != "exit"
     puts "Please enter command:"
     command = gets.chomp
     if command == "list"
