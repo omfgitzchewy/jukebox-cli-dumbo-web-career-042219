@@ -51,11 +51,11 @@ def run(songs)
     puts "Please enter a command:"
     input = gets.chomp
     if input == "list"
-      list(array)
+      list(songs)
     elsif input == "help"
       help
     else input == "play"
-      play(array)
+      play(songs)
     end
   end
   exit_jukebox
