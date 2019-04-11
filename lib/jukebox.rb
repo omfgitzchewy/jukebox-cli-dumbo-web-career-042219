@@ -27,9 +27,12 @@ end
 def play(array)
   puts "Please enter a song name or number:"
   input = gets.chomp
+  songs = {}
+  array.each_with_index do |title, i|
+    songs[i + 1] = title 
+  end
+  if
 
-  if array.include?(input) == true
-    puts "Playing" + input
   else
     "Invalid input, please try again"
   end
