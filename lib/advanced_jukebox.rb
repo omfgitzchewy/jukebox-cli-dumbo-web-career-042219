@@ -37,7 +37,16 @@ def play(my_songs)
   #if it isn't, tell them their choice is invalid
   #if it is, play the song using the system 'open <file path>' syntax
   #get the file path of the song by looking it up in the my_songs hash
+  puts "Please enter a song name:"
+  input = gets.chomp
 
+  if my_songs[input] = input
+    puts "Playing " + songs[input.to_i]
+  elsif array.include?(input)
+    puts "Playing " + input
+  else
+    puts "Invalid input, please try again"
+  end
 end
 
 def exit_jukebox
