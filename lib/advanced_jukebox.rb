@@ -53,8 +53,7 @@ end
 
 def run(array)
   help
-  puts "Please enter a command:"
-  input = gets.chomp
+  input = nil
   until input == "exit"
     puts "Please enter a command:"
     input = gets.chomp
