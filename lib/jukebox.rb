@@ -19,7 +19,7 @@ def help
 end
 
 def list(array)
-  arr.each_with_index do |element, i|
+  array.each_with_index do |element, i|
     puts "#{i}. #{element}"
   end
 end
