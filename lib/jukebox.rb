@@ -56,7 +56,7 @@ def run(array)
     elsif command == "help"
       help
     else command == "exit"
-      exit
+      exit_jukebox
     end
   end
 end
