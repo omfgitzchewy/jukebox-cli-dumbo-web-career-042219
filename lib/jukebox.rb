@@ -48,7 +48,7 @@ def run(array)
   help
   puts "Please enter command:"
   command = gets.chomp
-  unless command == "exit"
+  until command == "exit"
     puts "Please enter command:"
     command = gets.chomp
     if command == "list"
@@ -58,7 +58,6 @@ def run(array)
     else command == "help"
       help
     end
-  else
-    exit_jukebox
   end
+  exit_jukebox
 end
