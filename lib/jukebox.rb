@@ -50,11 +50,12 @@ def run(array)
   until command != "exit"
     puts "Please enter command:"
     command = gets.chomp
-    if command == "list"
+    case
+    when command == "list"
       list(array)
-    elsif command == "play"
+    when command == "play"
       play(array)
-    else command == "help"
+    when command == "help"
       help
     end
   end
