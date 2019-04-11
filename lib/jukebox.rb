@@ -49,6 +49,8 @@ def run(array)
   puts "Please enter a command:"
   input = gets.chomp
   until input == "exit"
+    puts "Please enter a command:"
+    input = gets.chomp
     if input == "list"
       list(array)
     elsif input == "help"
