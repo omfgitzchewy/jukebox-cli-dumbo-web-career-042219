@@ -23,3 +23,14 @@ def list(array)
     puts "#{i}. #{element}"
   end
 end
+
+def play(array)
+  puts "Please enter a song name or number:"
+  input = gets.chomp
+
+  if input.include?(array)
+    puts "Playing #{input}"
+  else
+    "Invalid input, please try again"
+  end
+end
