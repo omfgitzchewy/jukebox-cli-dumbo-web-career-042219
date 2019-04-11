@@ -20,6 +20,6 @@ end
 
 def list(array)
   arr.each_with_index do |element, i|
-    puts "#{i}. element"
+    puts '#{i}. element"'
   end
 end
