@@ -58,7 +58,7 @@ def run(array)
     when command == "help"
       help
     else
-      "Invalid, try again"
+      puts "Invalid, try again"
     end
   end
   exit_jukebox
