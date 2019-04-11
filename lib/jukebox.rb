@@ -31,8 +31,8 @@ def play(array)
   array.each_with_index do |title, i|
     songs[i + 1] = title
   end
-  if songs[input.to_i] 
-    puts "Playing " + songs[input]
+  if songs[input.to_i]
+    puts "Playing " + songs[input.to_i]
   elsif array.include?(input)
     puts "Playing " + input
   else
