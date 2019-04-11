@@ -44,19 +44,19 @@ def exit_jukebox
   puts "Goodbye"
 end
 
-def run(songs)
+def run(array)
   help
-  command = nil
-  while command != "exit"
-    puts "Please enter command:"
-    command = gets.chomp
+  input = nil
+  while input != "exit"
+    puts "Please enter a command:"
+    input = gets.chomp
     case
-    when command == "list"
-      list(songs)
-    when command == "play"
-      play(songs)
-    when command == "help"
+    when input == "help"
       help
+    when input == "list"
+      list(array)
+    when input == "play"
+      play(array)
     else
       puts "Invalid input, please try again"
     end
