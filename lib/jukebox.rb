@@ -20,7 +20,7 @@ end
 
 def list(array)
   array.each_with_index do |element, i|
-    puts "#{i}. #{element}"
+    puts "#{i + 1}. #{element}"
   end
 end
 
