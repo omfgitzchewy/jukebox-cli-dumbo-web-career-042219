@@ -40,10 +40,8 @@ def play(my_songs)
   puts "Please enter a song name:"
   input = gets.chomp
 
-  if my_songs[input] = input
-    puts "Playing " + songs[input.to_i]
-  elsif array.include?(input)
-    puts "Playing " + input
+  if (my_songs.keys).include?(input)
+    system "open #{my_songs[input]}"
   else
     puts "Invalid input, please try again"
   end
