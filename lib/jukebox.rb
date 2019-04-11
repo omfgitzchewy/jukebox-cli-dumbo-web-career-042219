@@ -50,6 +50,7 @@ def run(array)
   command = gets.chomp
   unless command == "exit"
     puts "Please enter command:"
+    command = gets.chomp
     if command == "list"
       list(array)
     elsif command == "play"
