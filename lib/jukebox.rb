@@ -57,9 +57,9 @@ def run(array)
       play(array)
     when command == "help"
       help
+    else
+      "Invalid, try again"
     end
-  else
-    "Invalid, try again"
   end
   exit_jukebox
 end
