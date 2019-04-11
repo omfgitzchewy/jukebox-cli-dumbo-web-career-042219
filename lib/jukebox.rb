@@ -29,7 +29,7 @@ def play(array)
   input = gets.chomp
 
   if array.include?(input)
-    puts "Playing" input
+    puts "Playing" + input
   else
     "Invalid input, please try again"
   end
